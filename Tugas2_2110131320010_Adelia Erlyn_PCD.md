@@ -2,7 +2,7 @@
 
 Nama | Nim | Mata Kuliah | Dosen Pengampu
 ---|---|---|---
-Adelia Erlyn N.C.P. | 2110131320010 | Sistem Operasi | Dr. Harja Santanapurba, M.Kom / Novan Alkaf B. S. S.Kom., M.T
+Adelia Erlyn N.C.P. | 2110131320010 | Pemrosesan Citra Digital | Dr. Harja Santanapurba, M.Kom / Novan Alkaf B. S. S.Kom., M.T
 
 <hr>
 
@@ -89,3 +89,59 @@ Setelah dijalankan, maka akan menghasilkan output seperti ini :
 <p align="center"><b>Warna Asli</b></p>
 
 <br>
+
+<h2><b> Tugas 2 </b></h2>
+<br>
+
+<h3><i><u> Gunakan fungsi (1)imread, (2)imshow, (3) dan imhist. Jelaskan fungsi-fungsi tersebut disertakan screenshot.</u></i></h3>
+<br>
+
+**Imread**
+
+<p align="justify">Imread (<i>images read</i>) digunakan untuk membaca citra menjadi sebuah data matriks. Format citra yang dapat dibaca oleh MATLAB bermacam-macam seperti BMP, JPG, TIF, PNG dan sebagainya.</p>
+
+<p align="justify">Pada pengerjaan tugas saya menggunakan aplikasi Octave, saya menggunakan fungsi imread pada :</p><br>
+
+```
+gambar = imread('C:\Tugas_1\img\IRENERV.PNG');
+```
+
+<br>
+
+**Imshow**
+
+<p align="justify">Imshow (<i>images show</i>) adalah perintah yang digunakan untuk menampilkan gambar dari data yang telah kita baca sebelumnya/ditampung pada sebuah variabel.</p>
+
+<p align="justify">Pada pengerjaan tugas saya menggunakan aplikasi Octave, saya menggunakan fungsi imshow pada :</p><br>
+
+```
+imshow(gambar);
+
+subplot(1,2,1);imshow(Red);title('Red');
+
+subplot(1,2,1);imshow(Green);title('Green');
+
+subplot(1,2,1);imshow(Blue);title('Blue');
+
+subplot(1,2,1);imshow(Gambar Asli);title('Gambar Asli');
+```
+
+<br>
+
+**Imhist**
+
+<p align="justify">Imhist adalah suatu perintah yang ada pada Matlab yang berfungsi untuk menampilkan suatu histogram dari sebuah citra. Histogram adalah tampilan grafis dari tabulasi frekuensi yang digambarkan dengan grafis batangan manifestasi data benning. Tiap tampilan batang menunjukan proporsi frekuensi pada masing-masing deret karegori yang berdampingan dengan interval yang tidak tumpang tindih.</p> 
+
+<p align="justify">Pada pengerjaan tugas saya menggunakan aplikasi Octave, saya menggunakan fungsi imread pada :</p><br>
+
+```
+subplot(1,2,2);imhist(Red);title('Red histogram');
+
+subplot(1,2,2);imhist(Green);title('Green histogram');
+
+subplot(1,2,2);imhist(Blue);title('Blue histogram');
+
+subplot(1,2,2);imhist(Gambar Asli);title('Gambar Asli histogram');
+```
+
+
