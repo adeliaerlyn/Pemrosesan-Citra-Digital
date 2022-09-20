@@ -2,7 +2,7 @@
 
 Nama | Nim | Mata Kuliah | Dosen Pengampu
 ---|---|---|---
-Adelia Erlyn N.C.P. | 2110131320010 | Sistem Operasi | Dr. Harja Santanapurba, M.Kom / Novan Alkaf B. S. S.Kom., M.T
+Adelia Erlyn N.C.P. | 2110131320010 | Pemrosesan Citra Digital | Dr. Harja Santanapurba, M.Kom / Novan Alkaf B. S. S.Kom., M.T
 
 <hr>
 
