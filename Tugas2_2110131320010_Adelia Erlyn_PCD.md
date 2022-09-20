@@ -89,6 +89,7 @@ Setelah dijalankan, maka akan menghasilkan output seperti ini :
 <p align="center"><b>Warna Asli</b></p>
 
 <br>
+<<<<<<< HEAD
 
 <h2><b> Tugas 2 </b></h2>
 <br>
@@ -145,3 +146,5 @@ subplot(1,2,2);imhist(Gambar Asli);title('Gambar Asli histogram');
 ```
 
 
+=======
+>>>>>>> 46ca1ccec9c5ab21f84bca361a65801e6655577
