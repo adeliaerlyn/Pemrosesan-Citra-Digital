@@ -66,25 +66,25 @@ Setelah dijalankan, maka akan menghasilkan output seperti ini :
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F2.png" width="650px"></p>
+<p align="center"><img src="img/TUGAS2_F7.png" width="650px"></p>
 
 <p align="center"><b>Red</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F3.png" width="650px"></p>
+<p align="center"><img src="img/TUGAS2_F8.png" width="650px"></p>
 
 <p align="center"><b>Green</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F4.png" width="650px"></p>
+<p align="center"><img src="img/TUGAS2_F9.png" width="650px"></p>
 
 <p align="center"><b>Blue</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F5.png" width="650px"></p>
+<p align="center"><img src="img/TUGAS2_F10.png" width="650px"></p>
 
 <p align="center"><b>Warna Asli</b></p>
 
