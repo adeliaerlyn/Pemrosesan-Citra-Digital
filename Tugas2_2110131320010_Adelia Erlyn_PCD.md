@@ -9,7 +9,7 @@ Adelia Erlyn N.C.P. | 2110131320010 | Pemrosesan Citra Digital | Dr. Harja Santa
 _**Deskripsi Tugas**_ <br>
 
 <hr><br>
-<p align="center"><img src="img/Foto_Tugas.png" width="500px"></p>
+<p align="center"><img src="img/Foto_Tugas.png" width="700px"></p>
 <br><hr>
 
 <u>_**Penyelesaian Tugas**_ </u><br>
@@ -66,35 +66,42 @@ Setelah dijalankan, maka akan menghasilkan output seperti ini :
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F2.png" width="500px"></p>
+<p align="center"><img src="img/TUGAS2_F2.png" width="650px"></p>
 
 <p align="center"><b>Red</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F3.png" width="500px"></p>
+<p align="center"><img src="img/TUGAS2_F3.png" width="650px"></p>
 
 <p align="center"><b>Green</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F4.png" width="500px"></p>
+<p align="center"><img src="img/TUGAS2_F4.png" width="650px"></p>
 
 <p align="center"><b>Blue</b></p>
 
 <br>
 
-<p align="center"><img src="img/TUGAS2_F5.png" width="500px"></p>
+<p align="center"><img src="img/TUGAS2_F5.png" width="650px"></p>
 
 <p align="center"><b>Warna Asli</b></p>
 
 <br>
-<<<<<<< HEAD
 
 <h2><b> Tugas 2 </b></h2>
 <br>
 
 <h3><i><u> Gunakan fungsi (1)imread, (2)imshow, (3) dan imhist. Jelaskan fungsi-fungsi tersebut disertakan screenshot.</u></i></h3>
+<br>
+
+**Screenshot Kode Hasil Pengerjaan Fungsi**
+
+<br>
+
+<p align="center"><img src="img/TUGAS2_F6.png" width="500px"></p>
+
 <br>
 
 **Imread**
@@ -145,6 +152,4 @@ subplot(1,2,2);imhist(Blue);title('Blue histogram');
 subplot(1,2,2);imhist(Gambar Asli);title('Gambar Asli histogram');
 ```
 
-
-=======
->>>>>>> 46ca1ccec9c5ab21f84bca361a65801e6655577
+<hr>
