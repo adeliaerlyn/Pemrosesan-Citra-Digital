@@ -96,6 +96,9 @@ Setelah dijalankan, maka akan menghasilkan output seperti ini :
 <h3><i><u> Gunakan fungsi (1)imread, (2)imshow, (3) dan imhist. Jelaskan fungsi-fungsi tersebut disertakan screenshot.</u></i></h3>
 <br>
 
+<h2><b> Jawaban </b></h2>
+<br>
+
 **Screenshot Kode Hasil Pengerjaan Fungsi**
 
 <br>
