@@ -6,7 +6,7 @@ Adelia Erlyn N.C.P. | 2110131320010 | Pemrosesan Citra Digital | Dr. Harja Santa
 
 <hr><br>
 
-<h2 align="center"><b> Grayscale </b></h2></p>
+<h1 align="center"><b> Grayscale </b></h1></p>
 
 <hr><br>
 
@@ -22,7 +22,10 @@ Di bawah ini, kita dapat melihat berbagai warna yang dapat digambarkan oleh mode
 
 <br>
 
-<h2 align="center"><b> Convert RGB to Grayscale </b></h2></p>
+<h1 align="center"><b> Convert RGB to Grayscale </b></h1></p>
+
+<p align="center"><img src="img/TUGAS3_F8.png" width="500px"></p>
+<p align="center"><b>Gambar Asli</b></p>
 
 <hr><br>
 
@@ -49,6 +52,7 @@ Dapat kita lihat cara mengubahnya seperti berikut :
 Gambar yang dihasilkan dari gambar yang saya masukan adalah seperti berikut :
 
 <p align="center"><img src="img/TUGAS3_F3.png" width="700px"></p>
+<p align="center"><b>Hasil Lightness Method</b></p>
 
 <br>
 
@@ -75,6 +79,7 @@ Dapat kita lihat cara mengubahnya seperti berikut :
 Gambar yang dihasilkan dari gambar yang saya masukan adalah seperti berikut :
 
 <p align="center"><img src="img/TUGAS3_F5.png" width="700px"></p>
+<p align="center"><b>Hasil Average Method</b></p>
 
 <br>
 
@@ -101,11 +106,8 @@ Dapat kita lihat cara mengubahnya seperti berikut :
 Gambar yang dihasilkan dari gambar yang saya masukan adalah seperti berikut :
 
 <p align="center"><img src="img/TUGAS3_F7.png" width="700px"></p>
+<p align="center"><b>Hasil Luminosity Method</b></p>
 
 <br>
-
-
-
-
-
+<hr>
 
