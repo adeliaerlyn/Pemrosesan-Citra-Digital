@@ -183,6 +183,30 @@ dither('S_PAINTER.TIF', 'di_spa.tif', [105,135,30;90,67.5,120;45,15,45;])
 <p align="center"><img src="img/TUGAS3_F16.png" width="500px"></p><br>
 
 
+<h1 align="center"><b> Bagaimana Cara Menentukan Pola Pada Patterning dan Dithering ? </b></h1></p>
+
+<br>
+
+<h1 align="center"><b> Bagaimana Cara Menentukan Matriks Threshold ? </b></h1>
+
+<p align="justify">Thresholding merupakan salah satu metode segmentasi citra yang memisahkan antara objek dengan background dalam suatu citra berdasarkan pada perbedaan tingkat kecerahannya atau gelap terang nya. Region citra yang cenderung gelap akan dibuat semakin gelap (hitam sempurna dengan nilai intensitas sebesar 0), sedangkan region citra yang cenderung terang akan dibuat semakin terang (putih sempurna dengan nilai intensitas sebesar 1). Oleh karena itu, keluaran dari proses segmentasi dengan metode thresholding adalah berupa citra biner dengan nilai intensitas piksel sebesar 0 atau 1. Setelah citra sudah tersegmentasi atau sudah berhasil dipisahkan objeknya dengan background, maka citra biner yang diperoleh dapat dijadikan sebagai masking utuk melakukan proses cropping sehingga diperoleh tampilan citra asli tanpa background atau dengan background yang dapat diubah-ubah. </p><br>
+
+<p align="center"><img src="img/TUGAS3_F17.png" width="500px"></p><br>
+
+```
+Keterangan :
+g(x, y) = Citra Biner
+f(x, y) = Citra Grayscale
+T = Nilai Threshold
+```
+
+<br>
+
+<h1 align="center"><b> Mengapa Pola Dithering 4x4 tidak jelas seperti 2x2? </b></h1></p>
+
+<p align="justify">Citra keluaran dari proses ordered dithering menunjukkan kualitas yang lebih baik dibandingkan dengan metode ambang batas (thresholding). Perbedaan antara keluaran yang dihasilkan antara citra menggunakan 2x2 matriks dithering dan 4x4 matriks dithering terletak pada sensitifitas nilai piksel aslinya. Citra yang dihasilkan dari penggunaaan matriks 2x2 memiliki pola halftone yang kurang dibandingkan dengan citra yang diproses menggunakan matriks dithering 4x4.Karena itu hasil dari citra dengan 2x2 matriks dithering memiliki banyak daerah dengan pola yang sama, seperti pada bagian latar belakang, rambut, dan hidung, meskipun pada daerah ini mengandung lebih banyak jenis nilai piksel.
+
+
 
 
 
