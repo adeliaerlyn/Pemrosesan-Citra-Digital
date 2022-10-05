@@ -108,6 +108,82 @@ Gambar yang dihasilkan dari gambar yang saya masukan adalah seperti berikut :
 <p align="center"><img src="img/TUGAS3_F7.png" width="700px"></p>
 <p align="center"><b>Hasil Luminosity Method</b></p>
 
+<br><hr>
+
+<h1 align="center"><b> Halftoning </b></h1></p>
+
+<hr><br>
+
+<p align="justify"><b>Halftoning</b> atau <b>halftoning analog</b> adalah proses yang mensimulasikan nuansa abu-abu dengan memvariasikan ukuran titik-titik hitam kecil yang diatur dalam pola yang teratur. Halftone dapat menciptakan ilusi gambar dengan menggunakan ukuran besar kecil dot (titik) dan mampu menciptakan perbedaan antara gelap dengan terang. Teknik ini digunakan dalam printer, serta industri penerbitan. Jika Anda memeriksa sebuah foto di koran, Anda akan melihat bahwa gambar itu terdiri dari titik-titik hitam meskipun tampaknya terdiri dari abu-abu. Hal ini dimungkinkan karena integrasi spasial yang dilakukan oleh mata kita. Mata kita memadukan detail halus dan merekam intensitas keseluruhan. Hal ini dimungkinkan karena integrasi spasial yang dilakukan oleh mata kita. Mata kita memadukan detail halus dan merekam intensitas keseluruhan.</p>
+
+<p align="justify"><b>Halftoning digital</b> mirip dengan halftoning di mana gambar didekomposisi menjadi kotak sel halftone. Elemen (atau titik yang digunakan halftoning dalam mensimulasikan nuansa abu-abu) dari sebuah gambar disimulasikan dengan mengisi sel halftone yang sesuai. Semakin banyak jumlah titik hitam dalam sel halftone, semakin gelap sel tersebut. Misalnya, pada gambar di bawah ini, sebuah titik kecil yang terletak di tengah disimulasikan dalam halftoning digital dengan mengisi sel halftone tengah; demikian juga, titik ukuran sedang yang terletak di sudut kiri atas disimulasikan dengan mengisi empat sel di sudut kiri atas. Titik betuihusar yang menutupi sebagian besar area pada gambar ketiga disimulasikan dengan mengisi semua sel halftone.</p><br>
+
+<p align="center"><img src="img/TUGAS3_F9.png" width="500px"></p>
+
 <br>
-<hr>
+
+Tiga metode umum untuk menghasilkan gambar halftoning digital adalah:
+- Patterning
+- Dithering
+- Error diffusion
+
+<br>
+
+<h2 align="center"><b> Patterning </b></h2></p>
+
+<br>
+
+<p align="justify">Pola adalah yang paling sederhana dari tiga teknik untuk menghasilkan gambar halftoning digital. Ini menghasilkan gambar yang memiliki resolusi spasial lebih tinggi daripada gambar sumber. Jumlah sel halftone citra keluaran sama dengan jumlah piksel citra sumber. Namun, setiap sel halftone dibagi lagi menjadi kotak 4x4. Setiap nilai piksel input diwakili oleh jumlah kotak terisi yang berbeda dalam sel halftone. Karena kisi 4x4 hanya dapat mewakili 17 tingkat intensitas yang berbeda, gambar sumber harus dikuantisasi.</p><br>
+
+<p align="center"><img src="img/TUGAS3_F10.png" width="500px"></p><br>
+
+<p align="center"><img src="img/TUGAS3_F11.png" width="500px"></p><br>
+
+
+<p align="justify">Pattern menghasilkan gambar halftoning digital dari gambar input menggunakan teknik pola. Pola program membaca gambar input, mengkuantisasi nilai piksel, dan memetakan setiap piksel ke pola yang sesuai. Gambar yang dihasilkan 16 kali lebih besar dari aslinya. Gambar yang dihasilkan ditulis ke file output sebagai file TIFF. Sebuah kata peringatan: "pola" membutuhkan sejumlah besar perhitungan, gambar berukuran kurang dari 100x100 direkomendasikan.</p>
+
+Contoh
+```
+pattern('PAINTER.TIF', 'pa_ptr.tif')
+```
+
+<br>
+
+<p align="center"><img src="img/TUGAS3_F12.png" width="500px"></p>
+
+<br><hr>
+
+<h1 align="center"><b> Dithering </b></h1></p>
+
+<p align="justify">Teknik lain yang digunakan untuk menghasilkan gambar halftoning digital adalah dithering. Tidak seperti pola, dithering membuat gambar keluaran dengan jumlah titik yang sama dengan jumlah piksel pada gambar sumber. Dithering dapat dianggap sebagai thresholding gambar sumber dengan matriks gentar. Matriks diletakkan berulang kali di atas gambar sumber. Dimanapun nilai piksel gambar lebih besar dari nilai dalam matriks, titik pada gambar output diisi. Masalah dithering yang terkenal adalah menghasilkan artefak pola yang diperkenalkan oleh matriks ambang batas tetap.</p><br>
+
+<p align="center"><img src="img/TUGAS3_F13.png" width="500px"></p><br>
+
+<p align="justify">Sinopsis pertama menggunakan matriks gentar default untuk ambang batas gambar input. Kekhawatiran default adalah</p><br>
+
+<p align="center"><img src="img/TUGAS3_F14.png" width="500px"></p><br>
+
+<p align="justify">Matriks ini adalah matriks gentar persegi panjang yang diekstraksi dari matriks gentar 450. 450 matriks gentar dapat membuat artefak kurang jelas. Sinopsis kedua, di sisi lain, menggunakan matriks gentar yang ditentukan oleh pengguna. gentar membaca dalam gambar input, membandingkan setiap piksel dengan elemen yang sesuai dalam matriks gentar, menghasilkan gambar output, dan menulisnya ke file output, yang dalam format TIFF. Sebuah kata peringatan: karena "gentar" membutuhkan banyak perhitungan, gambar berukuran kurang dari 100x100 direkomendasikan.</p><br>
+
+Contoh
+```
+dither('LENA.TIF', 'di_le.tif')
+```
+
+<br>
+
+<p align="center"><img src="img/TUGAS3_F15.png" width="500px"></p><br>
+
+```
+dither('S_PAINTER.TIF', 'di_spa.tif', [105,135,30;90,67.5,120;45,15,45;])
+```
+
+<br>
+
+<p align="center"><img src="img/TUGAS3_F16.png" width="500px"></p><br>
+
+
+
+
+
 
