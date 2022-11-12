@@ -42,7 +42,46 @@ I’(x,y) = T[I(x,y)]
 ```
 DOMAIN SPASIAL
 
-- Konsep koordinat baris dsn kolom
+- Konsep koordinat baris dan kolom
 - Pemrosesan piksel-per-piksel
 - Komputasi lama (terutama citra dengn ukuran yang spasial tinggi)
 ```
+
+<hr>
+
+<br><h2><b> 2. Domain Frekuensi </b></h2></br>
+
+<p align="justify">Dalam metode domain frekuensi didasarkan pada Transformasi Fourier dari suatu gambar. Penjelasannya, frekuensi dalam sebuah gambar menceritakan tentang laju perubahan nilai piksel.</p>
+
+<p align="justify">Diagram di bawah ini menggambarkan konversi citra dari domain spasial ke domain frekuensi menggunakan Transformasi Fourier.</p><br>
+
+<p align="center"><img src="img/TUGAS6_F3.png" width="500px"></p><br>
+
+<b><p align="justify"><i>Pertanyaan</i></b> : Mengapa kita membutuhkan domain selain domain spasial?</p>
+
+<b><p align="justify"><i>Jawaban</i></b> : Sering kali, tugas pemrosesan gambar paling baik dilakukan di domain selain domain spasial. Selain itu, mudah untuk mendeteksi beberapa fitur dalam domain tertentu, yaitu, informasi baru dapat diperoleh di domain lain.</p><br>
+
+<b><p align="justify">Transformasi Gambar terutama mengikuti tiga langkah :</b></p><br>
+
+<p align="center"><img src="img/TUGAS6_F4.png" width="500px"></p><br>
+
+<b><p align="justify"><i>Langkah 1.</i></b> Ubah gambar.</p>
+
+<b><p align="justify"><i>Langkah 2.</i></b> Melaksanakan tugas dalam domain yang diubah.</p>
+
+<b><p align="justify"><i>Langkah 3.</i></b> Terapkan transformasi terbalik untuk kembali ke domain spasial.</p><br>
+
+<h3 align="center"><b> NOTED </b></h3></p>
+
+
+```
+DOMAIN FREKUENSI
+
+- Konsep frekuensi, perubahan intensitas piksel ke piksel (frekuensi rendah dan tinggi)
+- Pemrosesan berdasarkan pemilihan frekuensi yang akan difilter atau tidak
+- Komputasi relatif cepat (terutama citra dengan ukuran spasial tinggi)
+```
+
+
+
+
