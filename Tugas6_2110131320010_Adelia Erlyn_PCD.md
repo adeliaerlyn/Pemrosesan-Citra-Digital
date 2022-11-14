@@ -15,6 +15,7 @@ Ada 2 metode untuk melakukan perbaikan kualitas citra (Image Enhancement), yaitu
 1. Image Enhancement ranah Spasial
 2. Image Enhancement ranah Frekuensi
 ```
+<br>
 
 <h2><b> 1. Domain Spasial </b></h2>
 
@@ -81,6 +82,58 @@ DOMAIN FREKUENSI
 - Pemrosesan berdasarkan pemilihan frekuensi yang akan difilter atau tidak
 - Komputasi relatif cepat (terutama citra dengan ukuran spasial tinggi)
 ```
+
+<hr><br>
+
+<h1 align="center"><b> Image Enhancement </b></h1></p>
+
+<hr><br>
+
+```
+Tujuan Image Enhancement (perbaikan kualitas citra) adalah untuk menonjolkan suatu ciri tertentu dalam citra tersebut, ataupun untuk memperbaiki aspek tampilan.
+```
+<br>
+
+<p align="justify">Proses ini biasanya bersifat eksperimental, subjektif, dan bergantung pada tujuan yang hendak dicapai. Operasi pengolahan citra untuk meningkatkan kualitas citra antara lain adalah:</p><br>
+
+<h2><b> 1. Operasi Titik </b></h2><br>
+
+<p align="justify">Operasi titik dalam <i>image enhancement</i> dilakukan dengan memodifikasi histogram citra masukan agar sesuai dengan karakteristik yang diharapkan. Teknik <i>image enhancement</i> melalui operasi titik antara lain adalah <i>intensity</i> adjustment dan histogram equalization.</p><br>
+
+<b><i>Intensity Adjustment</i></b><hr>
+
+<p align="justify">Intensity adjustment bekerja dengan cara melakukan pemetaan linear terhadap nilai intensitas pada histogram awal menjadi nilai intensitas pada histogram yang baru.</p>
+
+Contoh1 (<b><i>increase the contrast of an image</i></b>):
+
+<p align="justify">Citra rice.tif memiliki nilai kekontrasan yang rendah. Berdasarkan histogramnya, dapat diketahui bahwa citra ini tidak memiliki piksel dengan intensitas di bawah 40 dan di atas 204. Untuk memperbaikinya, kita dapat memetakan histogram secara <i>linear</i> sehingga diperoleh sebuah citra baru yang memiliki rentang histogram antara 0 hingga 255. Contoh perintah untuk melakukan peningkatan kontras adalah:</p><br>
+
+<p align="center"><img src="img/TUGAS6_F5.png" width="500px"></p><br>
+
+Hasil yang dapat diperoleh terkait <b>Peningkatan kontras pada citra <i>grayscale</i></b> :
+
+<br><p align="center"><img src="img/TUGAS6_F6.png" width="500px"></p><br>
+
+Contoh2 (<b><i>decrease the contrast of an image</i></b>):
+
+<p align="justify">Citra cameraman.tif memiliki nilai kekontrasan yang tinggi. Dengan menurunkan kontras dari citra tersebut, jas yang dikenakan oleh cameraman akan tampak lebih detail. Contoh perintah untuk melakukan penurunan kontras adalah :</p><br>
+
+<br><p align="center"><img src="img/TUGAS6_F7.png" width="500px"></p><br>
+
+Hasil yang dapat diperoleh terkait <b>Penurunan kontras pada citra <i>grayscale</i></b> :
+
+<br><p align="center"><img src="img/TUGAS6_F8.png" width="500px"></p><br>
+
+<b><i>Histogram Equalization</i></b><hr>
+
+<p align="justify"><i>Histogram equalization</i> bertujuan untuk menghasilkan citra keluaran yang memiliki nilai histogram yang relatif sama. Contoh perintah untuk melakukan histogram equalization adalah :</p
+
+>
+
+
+
+
+
 
 
 
