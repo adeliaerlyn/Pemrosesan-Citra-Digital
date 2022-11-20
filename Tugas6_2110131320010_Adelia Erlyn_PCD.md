@@ -128,7 +128,70 @@ Hasil yang dapat diperoleh terkait <b>Penurunan kontras pada citra <i>grayscale<
 
 <p align="justify"><i>Histogram equalization</i> bertujuan untuk menghasilkan citra keluaran yang memiliki nilai histogram yang relatif sama. Contoh perintah untuk melakukan histogram equalization adalah :</p
 
->
+Hasil yang dapat diperoleh :
+
+<br><p align="center"><img src="img/TUGAS6_F9.png" width="500px"></p><br>
+<br><p align="center"><img src="img/TUGAS6_F10.png" width="500px"></p><br>
+
+<h2><b> 2. Operasi Spasial </b></h2><br>
+
+<p align="justify">Operasi spasial dalam pengolahan citra digital dilakukan melalui penggunaan suatu kernel konvolusi 2-dimensi. Metode image enhancement dalam operasi spasial antara lain <i>low-pass filtering</i> dan <i>high-pass filtering</i>.</p><br>
+
+<b><i>Low-pass Filtering</i></b><hr>
+
+<p align="justify"><i>Low-pass filtering</i>g adalah proses filter yang melewatkan komponen citra dengan nilai intensitas yang rendah dan meredam komponen citra dengan nilai intensitas yang tinggi. Low pass filter akan menyebabkan citra menjadi lebih halus dan lebih blur.</p>
+
+```
+Aturan kernel untuk low-pass filter adalah:
+1. Semua koefisien kernel harus positif
+2. Jumlah semua koefisien kernel harus sama dengan 1
+```
+Contoh kernel  yang dapat digunakan pada low-pass filtering adalah :
+
+<br><p align="center"><img src="img/TUGAS6_F11.png" width="500px"></p><br>
+
+<p align="justify">Low-pass filtering menggunakan kernel (iii) disebut juga neighborhood averaging. Contoh perintah untuk melakukan low-pass filtering adalah :</p>
+
+<br><p align="center"><img src="img/TUGAS6_F12.png" width="500px"></p><br>
+
+Hasil yang diperoleh low-pass filtering pada citra grayscale :
+
+<br><p align="center"><img src="img/TUGAS6_F13.png" width="500px"></p><br>
+
+<b><i>Median Filtering</i></b><hr>
+
+<p align="justify"><i>Median filter</i> merupakan salah satu jenis low-pass filter, yang bekerja dengan mengganti nilai suatu piksel pada citra asal dengan nilai median dari piksel tersebut dan lingkungan tetangganya. Dibandingkan dengan neighborhood averaging, filter ini lebih tidak sensitif terhadap perbedaan intensitas yang ekstrim. Contoh perintah untuk melakukan median filtering terhadap citra yang terkontaminasi noise adalah :</p>
+
+<br><p align="center"><img src="img/TUGAS6_F14.png" width="500px"></p><br>
+
+Hasil yang diperoleh Median filtering citra terkontaminasi noise salt & pepper :
+
+<br><p align="center"><img src="img/TUGAS6_F15.png" width="500px"></p><br>
+
+<b><i>High-pass Filtering</i></b><hr>
+
+<p align="justify">Berkebalikan dengan low-pass filtering, high-pass filtering adalah proses filter yang melewatkan komponen citra dengan nilai intensitas yang tinggi dan meredam komponen citra dengan nilai intensitas yang rendah. High pass filter akan menyebabkan tepi objek tampak lebih tajam dibandingkan sekitarnya.</p>
+
+```
+Aturan kernel untuk high-pass filter adalah:
+1. Koefisien kernel boleh positif, negative, atau nol
+2. Jumlah semua koefisien kernel adalah 0 atau 1
+```
+
+Contoh kernel  yang dapat digunakan pada high-pass filtering adalah :
+
+<br><p align="center"><img src="img/TUGAS6_F16.png" width="500px"></p><br>
+
+<br><p align="center"><img src="img/TUGAS6_F17.png" width="500px"></p><br>
+
+Hasil yang diperoleh high-pass filtering pada citra grayscale :
+
+<br><p align="center"><img src="img/TUGAS6_F18.png" width="500px"></p><br>
+
+
+
+
+
 
 
 
