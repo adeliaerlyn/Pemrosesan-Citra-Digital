@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center"><b>Tugas 5 Pemrosesan Citra Digital</b></h1>
 
 Nama | Nim | Mata Kuliah | Dosen Pengampu
